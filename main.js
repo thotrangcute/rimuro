@@ -322,8 +322,10 @@ function buypopup(product) {
     </div>
     `);
   $(".popup-senninor").click(function () {
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    window.location.href = "https://hien0101.github.io/thanhtoans/";
+    const cartData = JSON.stringify(cartItems);
+    const encoded = encodeURIComponent(cartData);
+    window.location.href =
+      "https://hien0101.github.io/thanhtoans/?cart=" + encoded;
   });
   popup.find(".close-btnner").click(function () {
     popup.remove();

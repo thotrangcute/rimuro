@@ -1011,7 +1011,7 @@ strong {
     padding: 5px;
   }
   .product-img {
-    height: 300px !important;
+    height: 275px !important;
     max-width: 100%;
     object-fit: contain;
   }

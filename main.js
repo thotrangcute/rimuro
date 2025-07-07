@@ -444,6 +444,42 @@ function renderCartItems() {
       `
     );
     console.log(cartItem);
+    /*
+    <!-- Trang https://a.com -->
+<button id="sendData">Gửi dữ liệu sang b.com</button>
+
+<script>
+  const dataToSend = {
+    name: "Hiền cute",
+    message: "Chúc một ngày vui vẻ nha!"
+  };
+
+  // Lưu vào localStorage nếu cần
+  localStorage.setItem("myData", JSON.stringify(dataToSend));
+
+  document.getElementById("sendData").onclick = () => {
+    // Mở trang web khác
+    const win = window.open("https://b.com", "_blank");
+
+    // Gửi message sau 1 chút để đảm bảo trang b.com đã load
+    setTimeout(() => {
+      win.postMessage(dataToSend, "https://b.com");
+    }, 1000);
+  };
+</script>
+    */
+    localStorage.setItem(myData, JSON.stringify(cartItem));
+    document.querySelectorAll(".popup-senninor").onclick = () => {
+      const win = window.open(
+        "https://hien0101.github.io/thanhtoans/",
+        "_blank"
+      );
+      setTimeout(() => {
+        win(cartItem, "https://hien0101.github.io/thanhtoans/");
+      }, 1000);
+    };
+    consoloe.log(win);
+
     const messageDisplay = cartItem.find(".item-message");
     const increaseBtn = cartItem.find(".increase");
     const decreaseBtn = cartItem.find(".decrease");
@@ -732,7 +768,21 @@ $(".filter-btn").click(function () {
     displayProducts(allProducts.filter((p) => p.category == filter));
   }
 });
-
+/*
+filterButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    filterButton.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+    const filter = button.dataset.filter;
+    if (filter === "all") {
+      displayProducts(allProducts);
+    } else {
+      const filtered = allProducts.filter((p) => p.category === filter);
+      displayProducts(filtered);
+    }
+  });
+});
+*/
 $(".saiontime").click(function (e) {
   e.preventDefault();
 

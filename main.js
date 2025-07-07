@@ -468,17 +468,6 @@ function renderCartItems() {
   };
 </script>
     */
-    localStorage.setItem(myData, JSON.stringify(cartItem));
-    document.querySelectorAll(".popup-senninor").onclick = () => {
-      const win = window.open(
-        "https://hien0101.github.io/thanhtoans/",
-        "_blank"
-      );
-      setTimeout(() => {
-        win(cartItem, "https://hien0101.github.io/thanhtoans/");
-      }, 1000);
-    };
-    consoloe.log(win);
 
     const messageDisplay = cartItem.find(".item-message");
     const increaseBtn = cartItem.find(".increase");
@@ -503,7 +492,18 @@ function renderCartItems() {
     });
     cartListion.append(cartItem);
     console.log(cartItem);
+    localStorage.setItem(myData, JSON.stringify(cartItem));
+    document.querySelectorAll(".popup-senninor").onclick = () => {
+      const win = window.open(
+        "https://hien0101.github.io/thanhtoans/",
+        "_blank"
+      );
+      setTimeout(() => {
+        win(cartItem, "https://hien0101.github.io/thanhtoans/");
+      }, 1000);
+    };
   });
+  consoloe.log(win);
   function updateCartCount() {
     const total = cartItems.reduce((sum, item) => sum + item.quantity, 0);
     const cartCountMain = document.getElementById("cart-count-main");

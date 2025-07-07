@@ -419,8 +419,8 @@ function renderCartItems() {
     updateCartCount();
     return;
   }
-  /* const $cartList = $(cartList);*/
-  cartList.empty();
+  const cartListion = $(cartList);
+  cartListion.empty();
   cartItems.forEach((item, idx) => {
     const cartItem = $(
       `
@@ -465,7 +465,7 @@ function renderCartItems() {
       cartItems.splice(idx, 1);
       renderCartItems();
     });
-    cartList.append(cartItem);
+    cartListion.append(cartItem);
     console.log(cartItem);
   });
   function updateCartCount() {
@@ -732,21 +732,7 @@ $(".filter-btn").click(function () {
     displayProducts(allProducts.filter((p) => p.category == filter));
   }
 });
-/*
-filterButton.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButton.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-    const filter = button.dataset.filter;
-    if (filter === "all") {
-      displayProducts(allProducts);
-    } else {
-      const filtered = allProducts.filter((p) => p.category === filter);
-      displayProducts(filtered);
-    }
-  });
-});
-*/
+
 $(".saiontime").click(function (e) {
   e.preventDefault();
 

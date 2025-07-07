@@ -333,7 +333,7 @@ function buypopup(product) {
     }
   });
 
-  $("body").append($popup);
+  $("body").append(popup);
   $(popupBox).addClass("active");
   $(buttonBox).addClass("hidden");
   renderCartItems();

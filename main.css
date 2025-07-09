@@ -1142,6 +1142,7 @@ strong {
   .cart-item-info h4 {
     font-size: 1em;
     margin: 2% 0;
+    white-space: nowrap;
   }
   .cart-item-info p {
     font-size: 1em;

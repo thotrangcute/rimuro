@@ -968,7 +968,7 @@ strong {
   font-size: 0.5em;
   height: 25px;
   width: 20px;
-  background: #ffffff;
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -981,7 +981,7 @@ strong {
   color: red;
   height: 20px;
   width: 20px;
-  background: #ffffff;
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;

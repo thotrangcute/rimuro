@@ -1018,6 +1018,7 @@ strong {
     align-items: self-end;
     gap: 10px;
     transition: opacity 0.5s ease;
+    opacity: 10;
   }
   .product-item {
     width: 100% !important;
@@ -1081,7 +1082,7 @@ strong {
   }
   .popup-info h2,
   .popup-info h4 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .popup-desc {
     font-size: 1em;

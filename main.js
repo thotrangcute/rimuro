@@ -731,21 +731,7 @@ $(".filter-btn").click(function () {
     displayProducts(allProducts.filter((p) => p.category == filter));
   }
 });
-/*
-filterButton.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButton.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-    const filter = button.dataset.filter;
-    if (filter === "all") {
-      displayProducts(allProducts);
-    } else {
-      const filtered = allProducts.filter((p) => p.category === filter);
-      displayProducts(filtered);
-    }
-  });
-});
-*/
+
 $(".saiontime").click(function (e) {
   e.preventDefault();
 
@@ -770,7 +756,4 @@ $(".saiontime").click(function (e) {
     return;
   }
   alert("gửi thành công ");
-});
-$(document).ready(function () {
-  renderCartItems();
 });

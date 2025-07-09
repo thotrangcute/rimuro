@@ -1261,11 +1261,6 @@ strong {
   .popup-setfor {
     margin: 1% 0;
   }
-  /*
-  .content-wire-left span {
-    font-size: 4.5em;
-  }
-    */
   .popup-desc {
     margin: 1% 0;
   }
@@ -1303,4 +1298,35 @@ strong {
     letter-spacing: 1px;
     top: 7px;
   }
+}
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 28px;
+  margin-right: 16px;
+}
+.side-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-direction: column;
+  padding: 32px 16px 16px 16px;
+  gap: 18px;
+  transition: transform 0.3s;
+}
+.side-menu.active {
+  display: flex;
+}
+.side-menu-item {
+  font-size: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
 }

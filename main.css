@@ -290,6 +290,8 @@
 }
 .setup-content-siuverer {
   margin: 2%;
+  display: flex;
+  justify-content: center;
 }
 .setup-content-siuver-xiu {
   width: 12%;
@@ -306,7 +308,6 @@
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
-  left: 40%;
 }
 .setup-content-siuver-xiu::before {
   content: "";
@@ -1314,7 +1315,7 @@ strong {
     font-size: 15px;
   }
   .setup-content-siuver-xiu {
-    width: 20%;
+    width: 50%;
   }
   .product-item {
     margin-bottom: 3%;

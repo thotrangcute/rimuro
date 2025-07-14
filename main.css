@@ -1078,13 +1078,13 @@ strong {
     top: 2%;
   }
   .popup-image img {
-    width: 110px !important;
+    width: 85px !important;
     height: auto;
     margin: 0 auto;
     display: block;
     position: absolute;
-    right: 10%;
-    top: 8%;
+    right: 20%;
+    top: 14%;
   }
   .popup-middble img {
     margin: 0;
@@ -1145,7 +1145,7 @@ strong {
     border-right: none;
   }
   .cart-item-info {
-    width: 100%;
+    width: 55%;
   }
   .cart-item-info h4 {
     font-size: 1em;
@@ -1191,7 +1191,7 @@ strong {
   .popup-setuptofile {
     padding: 5px 0;
   }
-  .popup-filenight {
+  .popup-filenight h2 {
     font-size: 1em;
   }
   .popup-sectent {

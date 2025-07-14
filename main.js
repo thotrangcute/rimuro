@@ -14,17 +14,7 @@ $(".content-font-left").click(function () {
   );
 });
 let cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
-/*
-const contentText = document.querySelectorAll(".content-font-left");
-contentText.forEach(function (element) {
-  element.addEventListener("click", function () {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth",
-    });
-  });
-});
-*/
+
 $(".return-load").click(function () {
   $("html,body").animate({ scrollTop: 0 }, "smooth");
 });
@@ -35,25 +25,7 @@ $(window).click(function () {
     $(".return-load").hide();
   }
 });
-/*
 
-const returnLoadBtn = document.querySelector(".return-load");
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
-    returnLoadBtn.style.display = "block";
-  } else {
-    returnLoadBtn.style.display = "none";
-  }
-  if (returnLoadBtn) {
-    returnLoadBtn.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    });
-  }
-});
-*/
 $(".order-btn").click(function () {
   window.location.href = "https://thotrangcute.github.io/tinhtiencuarsp/";
 });

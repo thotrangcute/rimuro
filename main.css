@@ -543,7 +543,7 @@ button[type="submit"]:hover {
 #filter-buttons {
   display: flex;
   gap: 7%;
-
+  justify-content: center;
   height: 50px;
 }
 
@@ -997,7 +997,7 @@ strong {
   height: 25px;
   color: red;
 }
-@media (max-width: 430px) {
+@media (max-width: 640px) {
   .product-list {
     flex-direction: column;
     gap: 10px;
@@ -1051,6 +1051,9 @@ strong {
   }
   .content-cart-left {
     gap: 0;
+  }
+  .menu-danh {
+    width: 45%;
   }
   .product-percentafge {
     font-size: 0.9em;
@@ -1162,6 +1165,9 @@ strong {
     justify-content: center;
     top: -15px;
   }
+  .setup-container {
+    width: 45%;
+  }
   .popup-senninor {
     font-size: 1em;
     padding: 8px 0;
@@ -1246,6 +1252,9 @@ strong {
     width: 143%;
     position: absolute;
   }
+  .content-wire-left span {
+    font-size: 1.5em;
+  }
   .popup-content {
     width: 50%;
   }
@@ -1279,10 +1288,19 @@ strong {
     width: 30%;
     height: 400px;
   }
+  #filter-buttons {
+    gap: 0;
+  }
+  .surport-taitor {
+    gap: 0;
+  }
 }
 @media (min-width: 1250px) and (max-width: 1500px) {
   .popup-content {
     width: 50%;
+  }
+  .content-wire-left span {
+    font-size: 3.5em;
   }
 
   .product-percentafge {
@@ -1297,6 +1315,9 @@ strong {
     z-index: 2;
     letter-spacing: 1px;
     top: 7px;
+  }
+  #filter-buttons {
+    gap: 0;
   }
 }
 .hamburger-menu {

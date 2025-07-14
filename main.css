@@ -1057,7 +1057,7 @@ strong {
   }
   .product-percentafge {
     font-size: 0.9em;
-    padding: 2% 5%;
+    padding: 5% 0% !important;
     top: 2px;
     right: 2px;
   }
@@ -1257,7 +1257,7 @@ strong {
     gap: 0;
   }
   .product-item {
-    height: 300px;
+    height: 300px !important;
   }
   .product-overlay button {
     font-size: 10px;
@@ -1266,9 +1266,15 @@ strong {
   .popup-content {
     width: 75% !important;
   }
+  .product-img {
+    height: 200px !important;
+  }
   .popup-price,
   .popup-oldPrice {
     font-size: 20px;
+  }
+  .product-percentafge {
+    padding: 8% 0% !important;
   }
 }
 @media (max-width: 1250px) {

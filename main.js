@@ -1,3 +1,11 @@
+document.getElementById("toggleMenuBtn").addEventListener("click", function () {
+  const menu = document.getElementById("mainMenu");
+  menu.style.display =
+    menu.style.display === "none" || menu.style.display === ""
+      ? "block"
+      : "none";
+});
+
 $(".content-wire-left").click(function () {
   location.reload();
 });

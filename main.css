@@ -97,7 +97,7 @@
 }
 
 .menu-danh {
-  width: 75%;
+  width: 65%;
 }
 .fonttime-button {
   display: flex;
@@ -357,7 +357,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   padding: 40px;
-  max-width: 60%;
+  max-width: 75%;
   width: 100%;
   box-sizing: border-box;
 
@@ -622,7 +622,7 @@ button[type="submit"]:hover {
 }
 
 .popup-price {
-  font-size: 30px;
+  font-size: 28px;
   align-items: center;
   display: flex;
   margin: 0;
@@ -636,7 +636,7 @@ button[type="submit"]:hover {
 .popup-oldPrice {
   text-decoration: line-through;
   color: #888;
-  font-size: 30px;
+  font-size: 28px;
   cursor: pointer;
 }
 .product-pacess {
@@ -673,7 +673,7 @@ button[type="submit"]:hover {
   background-color: #3a88ff;
   right: 0px;
   font-size: 15px;
-  padding: 9% 4%;
+  padding: 6% 1%;
   font-family: sans-serif;
   z-index: 2;
   letter-spacing: 1px;
@@ -998,11 +998,31 @@ strong {
   height: 25px;
   color: red;
 }
+.menu-toggle {
+  display: none;
+}
+#mainMenu {
+  display: flex;
+  gap: 30px;
+}
 @media (max-width: 640px) {
   .product-list {
     flex-direction: column;
     gap: 10px;
     padding: 0 2%;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  #cartIconsel {
+    font-size: 10px;
+  }
+  .content-wire-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .product-overlay {
     position: absolute;
@@ -1029,6 +1049,7 @@ strong {
     height: auto;
     margin: 10px 0;
     padding: 5px;
+    height: 400px !important;
   }
   .product-img {
     height: 275px !important;
@@ -1051,14 +1072,14 @@ strong {
     font-size: 1em;
   }
   .content-cart-left {
-    gap: 0;
+    gap: 5px;
   }
   .menu-danh {
     width: 45%;
   }
   .product-percentafge {
     font-size: 0.9em;
-    padding: 5% 0% !important;
+    padding: 5.5% 0% !important;
     top: 2px;
     right: 2px;
   }
@@ -1172,7 +1193,7 @@ strong {
     top: -15px;
   }
   .setup-container {
-    width: 45%;
+    width: 40%;
   }
   .popup-senninor {
     font-size: 1em;
@@ -1252,13 +1273,86 @@ strong {
     gap: 20px;
     flex-wrap: wrap;
   }
+  .menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  #mainMenu {
+    display: none;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 5%;
+    z-index: 999;
+  }
+
+  .content-write {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-font-left,
+  .content-addres-left,
+  .content-cart-left {
+    padding: 8px;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .content-cart-left i {
+    margin-right: 5px;
+  }
 }
-@media (max-width: 830px) {
+@media (max-width: 830px) and (min-width: 640px) {
   .product-list {
-    gap: 0;
+    gap: 4%;
+  }
+  .surport-content-write {
+    font-size: 13px;
+  }
+  .surport-taitor {
+    gap: 2%;
+  }
+  .surport {
+    width: 85%;
+  }
+  #mainMenu {
+    display: flex;
+    gap: 20px;
+  }
+  .content-font-left span,
+  .content-addres-left span,
+  .content-cart-left-text {
+    font-size: 0.8em;
+  }
+  .content-cart-left {
+    gap: 10px;
+  }
+  #cartIconsel {
+    font-size: 10px;
+  }
+  .fonttime-button {
+    flex-wrap: wrap;
+  }
+  #filter-buttons {
+    height: 80px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    font-size: 17px !important;
   }
   .product-item {
     height: 320px !important;
+    width: 45% !important;
   }
   .product-overlay button {
     font-size: 10px;
@@ -1293,10 +1387,11 @@ strong {
     font-size: 1.5em;
   }
   .popup-content {
-    width: 45%;
+    width: 55%;
   }
   .product-percentafge {
-    padding: 9% 4%;
+    padding: 6% 0%;
+    font-size: 15px;
   }
   .popup-counter {
     margin: 1% 0;
@@ -1306,7 +1401,7 @@ strong {
   }
   .popup-desc {
     margin: 1% 0;
-    font-size: 15px;
+    font-size: 18px;
   }
   .popup-image img {
     width: 175px;
@@ -1327,7 +1422,14 @@ strong {
     text-align: center;
     position: relative;
     width: 30%;
-    height: 400px;
+    height: 300px;
+  }
+  .product-img {
+    height: 200px;
+  }
+  .product-overlay button {
+    height: 30px;
+    font-size: 12px;
   }
   #filter-buttons {
     gap: 0;
@@ -1351,7 +1453,7 @@ strong {
     background-color: #3a88ff;
     right: 0px;
     font-size: 15px;
-    padding: 9% 4%;
+    padding: 8% 1%;
     font-family: sans-serif;
     z-index: 2;
     letter-spacing: 1px;
